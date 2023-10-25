@@ -1,0 +1,48 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Set the body's height to fill the viewport */
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: flex-start; /* Align content to the top */
+}
+
+i{
+    font-size: 60px;
+    cursor: pointer;
+    margin: 30px 40px;
+    font-size: 60px;
+}
+
+.container{
+    font-family: "Arial", Helvetica, sans-serif;
+    padding: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 150px;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  #toggleDark {
+    font-size: 18px;
+  }
+
+  .container {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #toggleDark {
+    font-size: 50px;
+  }
+
+  .container {
+    font-size: 50px;
+  }
+}
